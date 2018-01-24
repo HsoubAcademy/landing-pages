@@ -348,6 +348,7 @@ section.gallery .work-gallery input.item-type-1:checked~.items .item:not(.item-t
 
 section.gallery .work-gallery .items .item {
     transition: all 0.6s ease;
+    margin-bottom: 25px;
 }
 
 section.contacts {
@@ -563,6 +564,24 @@ section.contacts .overlay .copyright p {
 
 section.contacts form .error {
     color: red;
+}
+
+@media (max-width: 990px) {
+    nav.navbar ul.navbar-nav li a.nav-link {
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+    }
+    section.contacts .overlay .testimonials .slider .carousel .carousel-item {
+        min-height: 390px;
+    }
+    section.contacts .overlay .contact-info ul.social li a i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    section.contacts .overlay .contact-info .form form .form-group input, section.contacts .overlay .contact-info .form form .form-group textarea {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 767px) {
