@@ -124,6 +124,7 @@ section.features .media {
   padding: 40px 10px;
   margin-bottom: 20px;
   position: relative;
+  max-height: 190px;
 }
 
 section.features .media .media-body h5 {
@@ -262,27 +263,20 @@ footer .contact .overlay p a:hover, footer .contact .overlay p a:focus {
   text-decoration: none;
 }
 
-@media (max-width: 767px) {
-  header .brand img {
-    width: 70%;
-  }
+@media (max-width: 768px) {
   header .page-heading h1 {
     font-size: 40px;
   }
-  header .page-heading p {
-    width: 80%;
-  }
   header .counter {
     width: 80%;
-    margin: 40px auto;
+  }
+  header .send-notification .input-group, footer .top-footer .overlay .input-group {
+    width: 60%;
   }
   header .counter .is-countdown .countdown-section .countdown-amount {
     font-size: 40px;
   }
   header .counter .is-countdown .countdown-section .countdown-period {
     font-size: 20px;
-  }
-  header .send-notification .input-group, footer .top-footer .overlay .input-group {
-    width: 80%;
   }
 }
