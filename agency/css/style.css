@@ -9,11 +9,15 @@ body {
     overflow-x: hidden;
 }
 
+/* ==============
+    navigation
+============== */
+
 nav.navbar {
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
     border-bottom: 1px solid transparent;
-    z-index: 9;
+    z-index: 10;
 }
 
 nav.navbar button.navbar-toggler {
@@ -76,6 +80,10 @@ nav.navbar.noTransparrent ul.navbar-nav li a.nav-link:hover, nav.navbar.noTransp
     color: #dae413;
     background-color: #16aeca;
 }
+
+/* ==============
+    header
+============== */
 
 header {
     background-image: url(../images/bg.jpg);
@@ -179,6 +187,7 @@ section.services .card {
     background-color: #ffffff;
     width: 100%;
     height: 250px;
+    margin-bottom: 20px;
     transition: all 1s ease;
 }
 
@@ -493,4 +502,18 @@ footer .copyright p {
     font-size: 15px;
     line-height: 78px;
     color: #919191;
+    margin-bottom: 0;
+}
+
+@media (max-width: 980px) {
+    nav.navbar ul.navbar-nav li a.nav-link {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+    section.services .card:hover {
+        height: 440px;
+    }
+    section.contacts .cmxform {
+        width: 80%;
+    }
 }
