@@ -351,7 +351,8 @@ section.contact .contact-us form .form-group {
     margin-bottom: 6px;
 }
 
-section.contact .contact-us form .form-group input, section.contact .contact-us form .form-group textarea {
+section.contact .contact-us form .form-group input, 
+section.contact .contact-us form .form-group textarea {
     border-radius: 3px;
     background-color: #242424;
     font-size: 18px;
@@ -434,54 +435,17 @@ footer .copyright p {
     text-align: left;
 }
 
-@media (max-width: 767px) {
-    header.header .overlay .navbar {
-        margin-bottom: 0px;
+@media (max-width: 900px) {
+    header {
+        overflow-x: hidden;
     }
-    header.header .overlay .header-text {
-        margin-top: 2rem;
-        margin-bottom: 4rem;
+    .product-img img:first-of-type {
+        width: 120%;
     }
-    header.header .overlay .header-text h3 {
-        font-size: 28px;
-        line-height: 35px;
-    }
-    header.header .overlay .header-text p {
-        line-height: 28px;
-        margin-bottom: 30px;
-    }
-    header.header .overlay .product-img img.label {
-        right: -20px;
-    }
-    header.header .overlay .product-img p {
-        right: 30px;
-    }
-    section.features .title h3 {
-        font-size: 28px;
-        line-height: 80px;
-    }
-    section.features .feature {
-        padding: 30px 0;
+    .buttons {
+        margin-bottom: 50px;
     }
     section.features .feature .media img {
-        margin: 0 1rem;
-        width: 30%;
-    }
-    section.features .feature .media .media-body {
-        margin-right: 1rem;
-        margin-top: 0px;
-    }
-    section.features .feature .media .media-body h5 {
-        padding: 3px 15px;
-        font-size: 28px;
-        margin-bottom: 20px;
-    }
-    section.features .feature .media .media-body p {
-        font-size: 16px;
-        line-height: 28px;
-    }
-    section.features .feature:nth-of-type(even) .media .media-body {
-        margin-right: 0rem;
-        margin-left: 1rem;
+        margin: 0 2rem;
     }
 }
