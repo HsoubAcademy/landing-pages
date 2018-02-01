@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
     font-family: ar-font;
     src: url(../fonts/JFFlatregular.ttf);
 }
@@ -510,10 +510,79 @@ footer .copyright p {
         padding-right: 0.5rem;
         padding-left: 0.5rem;
     }
-    section.services .card:hover {
-        height: 440px;
+
+    header .overlay .slider .carousel-inner .carousel-item .carousel-caption h3 {
+		font-size: 30px;
+	}
+	
+	header .overlay .slider .carousel-inner .carousel-item .carousel-caption {
+		bottom: 25%;
     }
+    
+    section.services .card {
+		height: 290px;
+	}
+}
+
+@media (max-width: 767px) {
+    .navbar {    
+		padding: .5rem 0rem;
+    }
+    nav.navbar .container {
+		width: 100%; 
+    }
+    nav.navbar .navbar-brand img {
+		width: 80%; 
+    }
+    nav.navbar .navbar-collapse {
+		background-color: #16aeca; 
+    }
+    nav.navbar.noTransparrent .navbar-collapse {
+		background-color: #ffffff; 
+    }
+    
+    section.gallery .work-gallery .overlay-gallery .gallery-text h3 {
+        font-size: 18px;
+        line-height: 36px;
+        margin-bottom: 10px;
+    }
+
+    section.gallery .work-gallery .overlay-gallery .gallery-text p {
+        font-size: 14px;
+        line-height: 28px;
+        margin-bottom: 30px;
+    }
+
+    section.gallery .work-gallery .overlay-gallery .gallery-text a.visit {
+        font-size: 14px;
+        line-height: 40px;
+    }
+
     section.contacts .cmxform {
-        width: 80%;
+        width: 100%;
     }
+}
+
+@media (max-width: 575px) {
+    header .overlay .slider .carousel-inner .carousel-item .carousel-caption {
+		left: 2%;
+        right: 2%; 
+    }
+    
+    header .overlay .slider .carousel-control-prev,
+	header .overlay .slider .carousel-control-next {
+		display: none; 
+    }
+    
+    .work-gallery .col-md > .col-sm > a {    
+		display: block !important;
+	}
+	
+	.work-gallery .col-md > .col-sm > a img {   
+	width: 100%;
+    }
+    
+    section.gallery .work-gallery .overlay-gallery img {    
+		width: 50%;
+	}
 }
