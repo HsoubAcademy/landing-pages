@@ -17,6 +17,7 @@ header.header .overlay {
 body {
     direction: rtl;
     font-family: ar-font;
+    overflow-x: hidden;
 }
 
 header.header .overlay .header-text h3 {
@@ -447,5 +448,69 @@ footer .copyright p {
     }
     section.features .feature .media img {
         margin: 0 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-img img:first-of-type {
+        width: 100%;
+    }
+    header.header .overlay .product-img img.label {
+        top: -30px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    header.header .overlay .product-img p {
+        top: -4px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    .feature .media{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    section.features .feature:nth-of-type(even) {
+        text-align: right;
+    }
+    section.features .feature:nth-of-type(even) .media{
+        flex-flow: column-reverse;
+    }
+    section.features .feature:nth-of-type(even) .media .media-body h5{
+        border-left: 0px;
+        border-right: 2px solid #7233a2;
+    }
+    section.prices .plan.popular {
+        margin-top: 100px;
+        padding-top: 15px;
+    }
+    .prices .container > .row .row > div{
+        flex-basis: auto;
+    }
+    .footer .container .row > div{
+        flex-basis: auto;
+    }
+    .footer .container .row > div ul{
+        text-align: center;
+        padding-top: 20px;
+    }
+    .footer .container .row > div .copyright p{
+        text-align: center;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    header.header .overlay .product-img img.label {
+        top: -20px;
+        margin: auto;
+        width: 120px;
+    }
+
+    header.header .overlay .product-img p {
+        top: -3px;
+        font-size: 18px;
     }
 }

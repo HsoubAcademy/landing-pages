@@ -6,6 +6,7 @@
 body {
     font-family: ar-font;
     direction: rtl;
+    overflow-x: hidden;
 }
 
 section.banner {
@@ -14,7 +15,7 @@ section.banner {
     background-position: center center;
     background-attachment: fixed;
     position: relative;
-    z-index: -3;
+    z-index: 10;
 }
 
 section.banner .overlay {
@@ -87,6 +88,8 @@ section.banner .overlay .banner-text button:last-child {
 section.feature {
     background-color: #ffffff;
     padding: 80px 0;
+    z-index: 20;
+    position: relative;
 }
 
 section.feature .features {
@@ -474,5 +477,17 @@ footer .footer .widget .content form .error {
     }
     section.option .options {
         margin-bottom: 300px;
+    }
+}
+
+@media (max-width: 500px) {
+    section.banner .overlay .banner-text button{
+        margin: 15px 0;
+    }
+    section.banner .overlay .banner-text button:last-child{
+        margin-right: 0;
+    }
+    section.option .options{
+        margin-right: 0;
     }
 }
