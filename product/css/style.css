@@ -19,7 +19,9 @@ body {
     font-family: ar-font;
     overflow-x: hidden;
 }
-
+header.header{
+    text-align: right;
+}
 header.header .overlay .header-text h3 {
     font-size: 36px;
     margin-bottom: 40px;
@@ -101,6 +103,7 @@ section.features .title h3 {
 section.features {
     padding: 25px 0;
     background-color: #ffffff;
+    text-align: right;
 }
 
 section.features .title:after {
@@ -237,6 +240,7 @@ section.prices .plan.popular button:hover {
 section.faq {
     padding: 55px 0;
     background-color: #ffffff;
+    text-align: right;
 }
 
 section.faq .title h3 {
@@ -340,6 +344,7 @@ section.video button i {
 section.contact {
     background-color: #131313;
     padding: 60px 0 40px;
+    text-align: right;
 }
 
 section.contact .contact-us .title h4 {
@@ -360,6 +365,7 @@ section.contact .contact-us form .form-group textarea {
     line-height: 35px;
     color: #aeadad;
     font-family: ar-font;
+    border: none;
 }
 
 section.contact .contact-us form button {
@@ -404,6 +410,7 @@ section.contact .other-products .media img {
 footer {
     background-color: #1d1d1d;
     line-height: 80px;
+    text-align: right;
 }
 
 footer ul li a {

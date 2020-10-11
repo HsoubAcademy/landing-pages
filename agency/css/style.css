@@ -17,7 +17,8 @@ nav.navbar {
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
     border-bottom: 1px solid transparent;
-    z-index: 10;
+    z-index: 20;
+    text-align: right;
 }
 
 nav.navbar button.navbar-toggler {
@@ -31,7 +32,7 @@ nav.navbar button.navbar-toggler span {
 }
 
 nav.navbar .navbar-brand img {
-    width: 100%;
+    width: 80%;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
 }
@@ -230,7 +231,11 @@ section.gallery .title {
 section.gallery .work-gallery a {
     position: relative;
     display: inline-block;
-    cursor: pointer;
+    cursor: pointer; 
+    width: 100%;
+}
+section.gallery .work-gallery a img{
+    width: 100%;
 }
 
 section.gallery .work-gallery a .hover {
@@ -265,12 +270,13 @@ section.gallery .work-gallery .overlay-gallery {
     top: 0px;
     width: 102%;
     height: 100vh;
-    z-index: 10;
+    z-index: 30;
     overflow: hidden;
     padding: 5% 10%;
     opacity: 0;
     transition: all 1s ease;
     margin-top: -100vh;
+    text-align: right;
 }
 
 section.gallery .work-gallery .overlay-gallery:target {
@@ -314,6 +320,7 @@ section.gallery .work-gallery .overlay-gallery .gallery-text a.visit {
     padding: 0px 30px;
     background-color: #16aeca;
     color: #ffffff;
+    width: auto;
 }
 
 section.gallery .work-gallery .overlay-gallery .gallery-text {
@@ -327,6 +334,7 @@ section.gallery .work-gallery .overlay-gallery a.close {
     left: 10%;
     font-size: 30px;
     font-weight: bold;
+    width: auto;
 }
 
 section.statistics {
@@ -357,6 +365,7 @@ section.statistics .overlay .stat .count {
 section.contacts {
     background-color: #ffffff;
     padding-top: 100px;
+    text-align: right;
 }
 
 section.contacts .info h3 {
@@ -423,6 +432,7 @@ section.contacts .form form .error {
 footer .top-footer {
     background-color: #171717;
     padding: 75px 0;
+    text-align: right;
 }
 
 footer .top-footer h3 {
@@ -529,11 +539,23 @@ footer .copyright p {
 		padding: .5rem 0rem;
     }
     nav.navbar .container {
-		width: 100%; 
+        width: 100%; 
+        max-width: 100%;
+        flex-direction: row-reverse;
+    }
+    .navbar .navbar-toggler{
+        outline: none;
+        margin: 0 !important;
+    }
+    .navbar .navbar-toggler span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     nav.navbar .navbar-brand img {
 		width: 80%; 
     }
+    
     nav.navbar .navbar-collapse {
 		background-color: #16aeca; 
     }

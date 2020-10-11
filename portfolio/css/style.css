@@ -72,6 +72,9 @@ header .MainCard>a {
     line-height: 32px;
     margin-bottom: 40px;
 }
+nav.navbar{
+    text-align: right;
+}
 
 nav.navbar ul.navbar-nav li a.nav-link {
     color: #ffffff;
@@ -82,7 +85,8 @@ nav.navbar ul.navbar-nav li a.nav-link {
     transition: all 0.5s ease;
 }
 
-nav.navbar ul.navbar-nav li a.nav-link:hover, nav.navbar ul.navbar-nav li a.nav-link.active {
+nav.navbar ul.navbar-nav li a.nav-link:hover,
+nav.navbar ul.navbar-nav li a.nav-link.active {
     color: #0575e6;
     background-color: #ffffff;
 }
@@ -91,7 +95,8 @@ nav.navbar.noTransparrent ul.navbar-nav li a.nav-link {
     color: #0575e6;
 }
 
-nav.navbar.noTransparrent ul.navbar-nav li a.nav-link:hover, nav.navbar.noTransparrent ul.navbar-nav li a.nav-link.active {
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link:hover,
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link.active {
     color: #ffffff;
     background-color: #0575e6;
 }
@@ -113,17 +118,35 @@ nav.navbar.noTransparrent button.navbar-toggler span {
     nav.navbar {
         min-height: 80px;
     }
+
     nav.navbar .container {
         width: 100%;
+        position: relative;
+        min-height: 40px;
+    }
+    nav.navbar button.navbar-toggler{
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 0;
+    }
+    nav.navbar button.navbar-toggler span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     nav.navbar.noTransparrent button.navbar-toggler {
-        margin: 15px auto;
+        margin: 0;
+    }
+    nav.navbar ul{
+        padding-right: 0;
     }
 }
 
 section.licence {
     padding: 220px 0 80px;
     background-color: #f6fbff;
+    text-align: right;
 }
 
 section.licence .title {
@@ -330,18 +353,25 @@ section.gallery .work-gallery label:hover {
     border: 2px solid #0575e6;
 }
 
-section.gallery .work-gallery input.item-type-1:checked~label.label-type-1, section.gallery .work-gallery input.item-type-2:checked~label.label-type-2, section.gallery .work-gallery input.item-type-3:checked~label.label-type-3, section.gallery .work-gallery input.item-type-all:checked~label.label-type-all {
+section.gallery .work-gallery input.item-type-1:checked~label.label-type-1,
+section.gallery .work-gallery input.item-type-2:checked~label.label-type-2,
+section.gallery .work-gallery input.item-type-3:checked~label.label-type-3,
+section.gallery .work-gallery input.item-type-all:checked~label.label-type-all {
     color: #ffffff;
     background-color: #0575e6;
     border: 2px solid #0575e6;
 }
 
-section.gallery .work-gallery input.item-type-1:checked~.items .item-type-1, section.gallery .work-gallery input.item-type-2:checked~.items .item-type-2, section.gallery .work-gallery input.item-type-3:checked~.items .item-type-3 {
+section.gallery .work-gallery input.item-type-1:checked~.items .item-type-1,
+section.gallery .work-gallery input.item-type-2:checked~.items .item-type-2,
+section.gallery .work-gallery input.item-type-3:checked~.items .item-type-3 {
     transform: scale(1.08);
     opacity: 1;
 }
 
-section.gallery .work-gallery input.item-type-1:checked~.items .item:not(.item-type-1), section.gallery .work-gallery input.item-type-2:checked~.items>.item:not(.item-type-2), section.gallery .work-gallery input.item-type-3:checked~.items>.item:not(.item-type-3) {
+section.gallery .work-gallery input.item-type-1:checked~.items .item:not(.item-type-1),
+section.gallery .work-gallery input.item-type-2:checked~.items>.item:not(.item-type-2),
+section.gallery .work-gallery input.item-type-3:checked~.items>.item:not(.item-type-3) {
     transform: scale(0.8);
     opacity: 0.5;
 }
@@ -355,6 +385,7 @@ section.contacts {
     background-image: url(../images/bg3.jpg);
     background-position: center center;
     background-size: cover;
+    text-align: right;
 }
 
 section.contacts .overlay {
@@ -446,14 +477,17 @@ section.contacts .overlay .testimonials .slider .carousel .carousel-indicators {
     bottom: 12px;
 }
 
-section.contacts .overlay .testimonials .slider .carousel .carousel-control-next, section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev {
+section.contacts .overlay .testimonials .slider .carousel .carousel-control-next,
+section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev {
     top: 50%;
     bottom: auto;
     width: auto;
     transform: translate(50%, -50%);
+    z-index: 10;
 }
 
-section.contacts .overlay .testimonials .slider .carousel .carousel-control-next i, section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev i {
+section.contacts .overlay .testimonials .slider .carousel .carousel-control-next i,
+section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev i {
     padding: 10px 20px;
     background: #0575e6;
     border-radius: 50%;
@@ -475,7 +509,8 @@ section.contacts .overlay .contact-info .title h3 {
     line-height: 50px;
 }
 
-section.contacts .overlay .contact-info .form form .form-group input, section.contacts .overlay .contact-info .form form .form-group textarea {
+section.contacts .overlay .contact-info .form form .form-group input,
+section.contacts .overlay .contact-info .form form .form-group textarea {
     border: 2px solid #f1f1f1;
     border-radius: 3px;
     font-family: ar-font;
@@ -497,7 +532,7 @@ section.contacts .overlay .contact-info .form form .form-group {
 section.contacts .overlay .contact-info .form form .form-group:before {
     font-family: FontAwesome;
     position: absolute;
-    top: 15px;
+    top: 8px;
     right: 30px;
     font-size: 18px;
     line-height: 25px;
@@ -571,15 +606,19 @@ section.contacts form .error {
         padding-right: 0.75rem;
         padding-left: 0.75rem;
     }
+
     section.contacts .overlay .testimonials .slider .carousel .carousel-item {
         min-height: 390px;
     }
+
     section.contacts .overlay .contact-info ul.social li a i {
         width: 40px;
         height: 40px;
         line-height: 40px;
     }
-    section.contacts .overlay .contact-info .form form .form-group input, section.contacts .overlay .contact-info .form form .form-group textarea {
+
+    section.contacts .overlay .contact-info .form form .form-group input,
+    section.contacts .overlay .contact-info .form form .form-group textarea {
         font-size: 14px;
     }
 }
@@ -588,19 +627,34 @@ section.contacts form .error {
     section.licence ul.timeline li .time-box {
         max-width: 100%;
     }
+
     section.licence ul.timeline li:not(:first-of-type) {
         margin-top: 20px;
     }
+
     section.licence ul.timeline li .time-box:after {
         display: none;
     }
+
     section.licence ul.timeline:before {
         height: 90%;
     }
+
     section.contacts .overlay .testimonials .slider {
         width: 95%;
     }
+
     section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption {
         padding: 60px 30px 20px;
+    }
+}
+
+@media (max-width: 990px) and (min-width: 768px){
+   section.contacts .overlay .contact-info ul.contact-us li {
+        overflow-wrap: break-word;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    	align-items: center;
     }
 }

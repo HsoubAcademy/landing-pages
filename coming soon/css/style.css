@@ -82,6 +82,7 @@ header .send-notification .input-group input {
   color: #e6e6e6;
   border-width: 2px;
   border-color: #e6e6e6;
+  height: auto;
 }
 
 header .send-notification .input-group input:hover, header .send-notification .input-group input:focus {
@@ -111,6 +112,7 @@ header .send-notification .input-group .alert {
 section.features {
   padding: 100px 0;
   position: relative;
+  text-align: right;
 }
 
 section.features h2 {
@@ -171,6 +173,7 @@ footer .top-footer .overlay .input-group input {
   font-family: ar-font;
   color: #c7c7c7;
   border-color: #fff;
+  height: auto;
 }
 
 footer .top-footer .overlay .input-group input:hover, footer .top-footer .overlay .input-group input:focus {
@@ -264,6 +267,18 @@ footer .contact .overlay p a:hover, footer .contact .overlay p a:focus {
 }
 
 @media (max-width: 768px) {
+  .animate__bounceIn{
+    animation-name: none !important;
+  }
+  .animate__fadeInUp{
+    animation-name: none !important;
+  }
+  .animate__fadeInDown{
+    animation-name: none !important;
+  }
+  .animate__zoomIn{
+    animation-name: none !important;
+  }
   header .page-heading h1 {
     font-size: 40px;
   }

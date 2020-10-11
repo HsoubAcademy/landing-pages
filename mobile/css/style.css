@@ -16,6 +16,7 @@ section.banner {
     background-attachment: fixed;
     position: relative;
     z-index: 10;
+    text-align: right;
 }
 
 section.banner .overlay {
@@ -90,6 +91,7 @@ section.feature {
     padding: 80px 0;
     z-index: 20;
     position: relative;
+    text-align: right;
 }
 
 section.feature .features {
@@ -134,6 +136,7 @@ section.option {
     background-color: #f8f8f8;
     z-index: -2;
     position: relative;
+    text-align: right;
 }
 
 section.option .images {
@@ -197,7 +200,8 @@ section.slider .carousel-indicators li.active {
     background-color: #ef473a;
 }
 
-section.slider .carousel-control-next, section.slider .carousel-control-prev {
+section.slider .carousel-control-next,
+section.slider .carousel-control-prev {
     width: 70px;
     height: 70px;
     border: 1px solid #ef473a;
@@ -212,6 +216,7 @@ section.faq {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    text-align: right;
 }
 
 section.faq .overlay {
@@ -267,6 +272,7 @@ section.faq .overlay .card .card-header h5 a.collapsed[aria-expanded="false"] i:
 footer {
     background-color: #232323;
     overflow: hidden;
+    text-align: right;
 }
 
 footer .footer .widget .title h4 {
@@ -394,33 +400,42 @@ footer .footer .widget .content form .error {
         margin: 0px 0 40px;
         width: 210px;
     }
+
     section.banner .overlay .banner-text button:last-child {
         margin-right: 0px;
     }
+
     section.feature {
         padding: 90px 0 0;
     }
+
     section.feature .features {
         margin-top: -40px;
     }
+
     section.feature .features i {
         width: 50px;
         height: 50px;
         line-height: 50px;
     }
+
     section.banner .overlay .images img {
         width: 115%;
     }
+
     section.banner .overlay .images {
         bottom: -80px;
         right: -80px;
     }
+
     section.option .options .media {
         margin-bottom: 30px;
     }
+
     section.option {
         padding: 40px 0 0;
     }
+
     footer .footer .widget .content ul.social-links li a {
         width: 40px;
         height: 40px;
@@ -433,26 +448,33 @@ footer .footer .widget .content form .error {
         bottom: -500px;
         right: 20%;
     }
+
     section.banner .overlay .app-icon img {
         margin-top: 0px;
         margin-bottom: 30px;
     }
+
     section.banner .overlay .banner-text {
         margin-bottom: 350px;
     }
+
     section.banner .overlay .banner-text button {
         padding: .5rem 1rem;
         line-height: 40px;
     }
+
     section.banner .overlay .banner-text button img {
         width: 40px;
     }
+
     section.banner .overlay .banner-text button i {
         font-size: 40px;
     }
+
     section.option .images {
         bottom: -400px;
     }
+
     section.option .options {
         margin-bottom: 300px;
     }
@@ -464,30 +486,36 @@ footer .footer .widget .content form .error {
         right: 5%;
         left: 5%;
     }
+
     section.banner .overlay .banner-text {
         margin-bottom: 350px;
         text-align: center;
     }
+
     section.banner .overlay .app-icon img {
         margin: 0 auto 30px;
         display: block;
     }
+
     section.option .images {
         bottom: -400px;
     }
+
     section.option .options {
         margin-bottom: 300px;
     }
 }
 
 @media (max-width: 500px) {
-    section.banner .overlay .banner-text button{
+    section.banner .overlay .banner-text button {
         margin: 15px 0;
     }
-    section.banner .overlay .banner-text button:last-child{
+
+    section.banner .overlay .banner-text button:last-child {
         margin-right: 0;
     }
-    section.option .options{
+
+    section.option .options {
         margin-right: 0;
     }
 }
